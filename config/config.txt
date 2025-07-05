@@ -1,0 +1,15 @@
+-dev 0
+-model /mnt/maxiangnan/NiuTrans.Speech-main/tools/nar_small.bin
+-tgtvocab /mnt/maxiangnan/NiuTrans.Speech-main/tools/model/token_list
+-customFilter ../model/tiny_filters.csv
+-inputAudio ../example/audio_zh.wav
+-output ../output/v3_output.txt
+-maxlen 224
+-lenalpha 1.0
+-lang zh
+-beam 1
+-sbatch 1
+-wbatch 300000
+-numBins 80
+-numLanguage 99
+-fusionAttn 1

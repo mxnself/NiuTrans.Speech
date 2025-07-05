@@ -1,0 +1,15 @@
+-dev 0
+-model /mnt/maxiangnan/NiuTrans.Speech-main/tools/small.bin
+-tgtvocab /mnt/maxiangnan/NiuTrans.Speech-main/tools/small.token
+-customFilter ../model/filters.csv
+-inputAudio /mnt/maxiangnan/NiuTrans.Speech-main/example/BAC009S0916W0129.wav
+-output ../output/tiny_example_output.txt
+-maxlen 224
+-lenalpha 1.0
+-lang zh
+-beam 5
+-sbatch 1
+-wbatch 300000
+-numBins 80
+-numLanguage 99
+-fusionAttn 1
